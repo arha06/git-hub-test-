@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE46056C255B1F5400E2C860 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE46056B255B1F5400E2C860 /* VideoTableViewCell.swift */; };
 		CE49983E255724D500593D5C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49983D255724D500593D5C /* Response.swift */; };
+		CECE3733255C5BCB0051ED54 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECE3732255C5BCB0051ED54 /* CacheManager.swift */; };
 		CED816092550866100B41770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED816082550866100B41770 /* AppDelegate.swift */; };
 		CED8160B2550866100B41770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8160A2550866100B41770 /* SceneDelegate.swift */; };
 		CED8160D2550866100B41770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8160C2550866100B41770 /* ViewController.swift */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE46056B255B1F5400E2C860 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		CE49983D255724D500593D5C /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		CECE3732255C5BCB0051ED54 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		CED816052550866100B41770 /* git hub test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "git hub test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED816082550866100B41770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED8160A2550866100B41770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +49,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE46056E255B1FB300E2C860 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CED8162125532C0400B41770 /* Constants.swift */,
+				CECE3732255C5BCB0051ED54 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CE46056F255B1FBC00E2C860 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CED8160E2550866100B41770 /* Main.storyboard */,
+				CED816132550866400B41770 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE460570255B1FCB00E2C860 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CED8162425532FAB00B41770 /* Video.swift */,
+				CE49983D255724D500593D5C /* Response.swift */,
+				CED816272553305600B41770 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE460571255B1FD700E2C860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE46056B255B1F5400E2C860 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE460572255B1FE800E2C860 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CED8160C2550866100B41770 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CED815FC2550866100B41770 = {
 			isa = PBXGroup;
 			children = (
@@ -64,16 +112,14 @@
 		CED816072550866100B41770 /* git hub test */ = {
 			isa = PBXGroup;
 			children = (
-				CED816082550866100B41770 /* AppDelegate.swift */,
 				CED8160A2550866100B41770 /* SceneDelegate.swift */,
-				CED8160C2550866100B41770 /* ViewController.swift */,
-				CED8162425532FAB00B41770 /* Video.swift */,
-				CE49983D255724D500593D5C /* Response.swift */,
-				CED8160E2550866100B41770 /* Main.storyboard */,
-				CED8162125532C0400B41770 /* Constants.swift */,
+				CED816082550866100B41770 /* AppDelegate.swift */,
+				CE460572255B1FE800E2C860 /* View Controllers */,
+				CE460571255B1FD700E2C860 /* Views */,
+				CE460570255B1FCB00E2C860 /* Models */,
+				CE46056F255B1FBC00E2C860 /* Storyboards */,
+				CE46056E255B1FB300E2C860 /* Helpers */,
 				CED816112550866400B41770 /* Assets.xcassets */,
-				CED816272553305600B41770 /* Model.swift */,
-				CED816132550866400B41770 /* LaunchScreen.storyboard */,
 				CED816162550866400B41770 /* Info.plist */,
 			);
 			path = "git hub test";
@@ -150,10 +196,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED8160D2550866100B41770 /* ViewController.swift in Sources */,
+				CECE3733255C5BCB0051ED54 /* CacheManager.swift in Sources */,
 				CED816092550866100B41770 /* AppDelegate.swift in Sources */,
 				CED8160B2550866100B41770 /* SceneDelegate.swift in Sources */,
 				CED816282553305600B41770 /* Model.swift in Sources */,
 				CED8162225532C0400B41770 /* Constants.swift in Sources */,
+				CE46056C255B1F5400E2C860 /* VideoTableViewCell.swift in Sources */,
 				CED8162525532FAB00B41770 /* Video.swift in Sources */,
 				CE49983E255724D500593D5C /* Response.swift in Sources */,
 			);
